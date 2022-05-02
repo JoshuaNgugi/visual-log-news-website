@@ -1,560 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>The JKUAT Reporter</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="The JKUAT Reporter" name="keywords">
-        <meta content="The JKUAT Reporter" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>The JKUAT Reporter</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="The JKUAT Reporter" name="keywords">
+    <meta content="The JKUAT Reporter" name="description">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-    <body>
-        <!-- Top Bar Start -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="tb-contact">
-                            <p><i class="fas fa-envelope"></i>info@mail.com</p>
-                            <p><i class="fas fa-phone-alt"></i>+012 345 6789</p>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav Bar Start -->
+    <div class="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Sub Item 1</a>
+                                <a href="#" class="dropdown-item">Sub Item 2</a>
+                            </div>
                         </div>
+                        <a href="single-page.html" class="nav-item nav-link active">Single Page</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="tb-menu">
-                            <a href="">About</a>
-                            <a href="">Privacy</a>
-                            <a href="">Terms</a>
-                            <a href="">Contact</a>
-                        </div>
+                    <div class="social ml-auto">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">News</a></li>
+                <li class="breadcrumb-item active">News details</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Brand Start -->
+    <div class="brand">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="b-logo">
+                        <a href="index.html">
+                            <img src="img/cisco.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                    <div class="b-logo">
+                        <a href="index.html">
+                            <img src="img/reporter-logo-1.PNG" alt="The Jkuat Reporter">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="b-search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Top Bar Start -->
-        
-        <!-- Brand Start -->
-        <div class="brand">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="b-logo">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-4">
-                        <div class="b-ads">
-                            <a href="https://htmlcodex.com">
-                                <img src="img/ads-1.jpg" alt="Ads">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <div class="b-search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Brand End -->
+    </div>
+    <!-- Brand End -->
 
-        <!-- Nav Bar Start -->
-        <div class="nav-bar">
-            <div class="container">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">Sub Item 1</a>
-                                    <a href="#" class="dropdown-item">Sub Item 2</a>
-                                </div>
-                            </div>
-                            <a href="single-page.html" class="nav-item nav-link active">Single Page</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                        </div>
-                        <div class="social ml-auto">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Nav Bar End -->
-        
-        <!-- Breadcrumb Start -->
-        <div class="breadcrumb-wrap">
-            <div class="container">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">News</a></li>
-                    <li class="breadcrumb-item active">News details</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Breadcrumb End -->
-        
-        <!-- Single News Start-->
-        <div class="single-news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="sn-container">
-                            <div class="sn-img">
-                                <img src="img/news-825x525.jpg" />
-                            </div>
-                            <div class="sn-content">
-                                <h1 class="sn-title">Cisco Certified Network Associate (CCNA)</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie, lorem eu eleifend bibendum, augue purus mollis sapien, non rhoncus eros leo in nunc. Donec a nulla vel turpis consectetur tempor ac vel justo. In hac habitasse platea dictumst. Cras nec sollicitudin eros. Nunc eu enim non turpis sagittis rhoncus consectetur id augue. Mauris dignissim neque felis. Phasellus mollis mi a pharetra cursus. Maecenas vulputate augue placerat lacus mattis, nec ornare risus sollicitudin.
-                                </p>
-                                <p>
-                                    Mauris eu pulvinar tellus, eu luctus nisl. Pellentesque suscipit mi eu varius pulvinar. Aenean vulputate, massa eget elementum finibus, ipsum arcu commodo est, ut mattis eros orci ac risus. Suspendisse ornare, massa in feugiat facilisis, eros nisl auctor lacus, laoreet tempus elit dolor eu lorem. Nunc a arcu suscipit, suscipit quam quis, semper augue.
-                                </p>
-                                <p>
-                                    Quisque arcu nulla, convallis nec orci vel, suscipit elementum odio. Curabitur volutpat velit non diam tincidunt sodales. Nullam sapien libero, bibendum nec viverra in, iaculis ut eros.
-                                </p>
-                                <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>
-                                    Vestibulum sit amet ullamcorper sem. Integer hendrerit elit eget purus sodales maximus. Quisque ac nulla arcu. Morbi venenatis arcu ac arcu cursus pharetra. Morbi sit amet viverra augue, ac ultricies libero. Praesent elementum lectus mi, eu elementum urna venenatis sed. Donec auctor purus ut mattis feugiat. Integer mi erat, consectetur sed tincidunt vitae, sagittis elementum libero. Vivamus a mauris consequat, hendrerit lectus in, fermentum libero. Integer mattis bibendum neque et porttitor.
-                                </p>
-                                <p>
-                                    Mauris quis arcu finibus, posuere dolor eu, viverra felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In porta, ex vitae accumsan facilisis, nisi tellus dictum metus, quis fringilla dui tellus in tellus. Praesent pharetra orci at vehicula posuere. Sed molestie fringilla lorem, vel imperdiet tortor blandit at. Quisque non ultrices lorem, eget rhoncus orci. Fusce porttitor placerat diam et mattis. Nam laoreet, ex eu posuere sollicitudin, sem tortor pellentesque ipsum, quis mattis purus lectus ut lacus. Integer eu risus ac est interdum scelerisque.
-                                </p>
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>
-                                    Praesent ultricies, mauris eget vestibulum viverra, neque lorem malesuada mauris, eget rhoncus lectus enim a lorem. Vivamus at vehicula risus, eget facilisis massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et posuere sapien. Fusce bibendum lorem sem, quis tincidunt felis mattis nec.
-                                </p>
-                                <p>
-                                    Proin vel nulla purus. Nunc nec eros in nisi efficitur rutrum quis sed eros. Mauris felis dolor, rhoncus eget gravida vitae, pretium vel arcu. Cras blandit tellus eget tellus dictum venenatis. Sed ultricies bibendum dictum. Etiam facilisis erat id turpis tincidunt malesuada. Duis bibendum sapien eu condimentum sagittis. Proin nunc lorem, ullamcorper vel tortor sodales, imperdiet lacinia dui. Sed congue, felis id rhoncus varius, urna lacus imperdiet nunc, ut porttitor mauris mi quis mi. Integer rutrum est finibus metus eleifend scelerisque. Morbi auctor dignissim purus in interdum. Vestibulum eu dictum enim. Suspendisse et sem vitae velit feugiat facilisis.
-                                </p>
-                                <p>
-                                    Nam sodales scelerisque nunc sed convallis. Vestibulum facilisis porta erat, sit amet pharetra tortor blandit id. Nunc velit tellus, consectetur sed convallis in, tincidunt finibus nulla. Integer vel ex in mauris tincidunt tincidunt nec sed elit. Etiam pretium lectus lectus, sed aliquet erat tristique euismod. Praesent faucibus nisl augue, ac tempus libero pellentesque malesuada. Vivamus iaculis imperdiet laoreet. Aliquam vel felis felis. Proin sed sapien erat. Etiam a quam et metus tempor rutrum. Curabitur in faucibus justo. Etiam imperdiet iaculis urna.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sn-related">
-                            <h2>Related News</h2>
-                            <div class="row sn-slider">
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="img/news-350x223-1.jpg" />
-                                        <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="img/news-350x223-2.jpg" />
-                                        <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="img/news-350x223-3.jpg" />
-                                        <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="sn-img">
-                                        <img src="img/news-350x223-4.jpg" />
-                                        <div class="sn-title">
-                                            <a href="">Interdum et fames ac ante</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="sidebar">
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">Recently Viewed</h2>
-                                <div class="news-list">
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="img/news-350x223-1.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="img/news-350x223-2.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="img/news-350x223-3.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="img/news-350x223-4.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                    <div class="nl-item">
-                                        <div class="nl-img">
-                                            <img src="img/news-350x223-5.jpg" />
-                                        </div>
-                                        <div class="nl-title">
-                                            <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="sidebar-widget">
-                                <div class="image">
-                                    <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
-                                </div>
-                            </div>
-                            
-                            <div class="sidebar-widget">
-                                <div class="tab-news">
-                                    <ul class="nav nav-pills nav-justified">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="pill" href="#latest">Latest</a>
-                                        </li>
-                                    </ul>
-
-                                    <div class="tab-content">
-                                        <div id="featured" class="container tab-pane active">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-1.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-5.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="popular" class="container tab-pane fade">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-1.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-2.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="latest" class="container tab-pane fade">
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-5.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-4.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                            <div class="tn-news">
-                                                <div class="tn-img">
-                                                    <img src="img/news-350x223-3.jpg" />
-                                                </div>
-                                                <div class="tn-title">
-                                                    <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="sidebar-widget">
-                                <div class="image">
-                                    <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">News Category</h2>
-                                <div class="category">
-                                    <ul>
-                                        <li><a href="">National</a><span>(98)</span></li>
-                                        <li><a href="">International</a><span>(87)</span></li>
-                                        <li><a href="">Economics</a><span>(76)</span></li>
-                                        <li><a href="">Politics</a><span>(65)</span></li>
-                                        <li><a href="">Lifestyle</a><span>(54)</span></li>
-                                        <li><a href="">Technology</a><span>(43)</span></li>
-                                        <li><a href="">Trades</a><span>(32)</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-widget">
-                                <div class="image">
-                                    <a href="https://htmlcodex.com"><img src="img/ads-2.jpg" alt="Image"></a>
-                                </div>
-                            </div>
-                            
-                            <div class="sidebar-widget">
-                                <h2 class="sw-title">Tags Cloud</h2>
-                                <div class="tags">
-                                    <a href="">National</a>
-                                    <a href="">International</a>
-                                    <a href="">Economics</a>
-                                    <a href="">Politics</a>
-                                    <a href="">Lifestyle</a>
-                                    <a href="">Technology</a>
-                                    <a href="">Trades</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Single News End-->        
-        
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Get in Touch</h3>
+    <!-- Single News Start-->
+    <div class="single-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="sn-container">
+                        <div class="sn-content">
+                            <h1 class="sn-title">Cisco Certified Network Associate (CCNA)</h1>
+                            <h3>Course Overview</h3>
+                            <p>
+                                CCNA 7: Introduction to Networks
+                                (ITN) covers the architecture, structure,
+                                functions and components of the
+                                Internet and other computer networks.
+                                Students achieve a basic understanding
+                                of how networks operate and how to
+                                build simple local area networks
+                                (LAN), perform basic configurations
+                                for routers and switches, and implement
+                                Internet Protocol (IP).
+                            </p>
+                            <p>
+                                This course focuses on switching
+                                technologies and router operations that
+                                support small-to-medium business
+                                networks, including wireless local area
+                                networks (WLAN) and security concepts.
+                                In this second course in a 3-course CCNA
+                                series you’ll perform basic network
+                                configuration and troubleshooting,
+                                identify and mitigate LAN security
+                                threats, and configure and secure a basic
+                                WLAN. Recommended preparation:
+                                CCNA: Introduction to Networks or having equivalent knowledge. After
+                                completing all three CCNA courses, you
+                                are ready to take the CCNA Certification.
+                            </p>
+                            <h3>By the end of the course students will be able to</h3>
+                            <p>
+                            <ul>
+                                <li>Configure switches and end
+                                    devices to provide access to local
+                                    and remote network resources.</li>
+                                <li>Explain how physical and data link
+                                    layer protocols support the
+                                    operation of Ethernet in a switched
+                                    network.</li>
+                                <li>Configure routers to enable
+                                    end-to-end</li>
+                                <li>Connectivity between remote
+                                    devices.</li>
+                                <li>Create IPv4 and IPv6 addressing
+                                    schemes and verify network
+                                    connectivity between devices.</li>
+                                <li>Explain how the upper layers of the
+                                    OSI model support network
+                                    applications.</li>
+                                <li>Configure a small network with
+                                    security best practices.</li>
+                                <li>Troubleshoot connectivity in a small
+                                    network.</li>
+                            </ul>
+                            The 70-hour, instructor-led course is the
+                            1st of 3 courses in the Cisco CCNA 7
+                            curriculum. The course includes activities
+                            using Packet Tracer, hands-on lab work,
+                            and a wide array of assessment types and
+                            tools.
+                            </p>
+                            <p>
+                                Large enterprises depend heavily on the
+                                smooth operation of their network
+                                infrastructures. This final course in the
+                                CCNA series describes the architectures
+                                and considerations related to designing, securing, operating, and
+                                troubleshooting enterprise networks. It
+                                covers wide area network (WAN)
+                                technologies and quality of service
+                                (QoS) mechanisms used for secure
+                                remote access along with the
+                                introduction of software-defined
+                                networking, virtualization, and
+                                automation concepts that support the
+                                digitalization of networks.
+                                Recommended preparation: CCNA:
+                                Switching, Routing, and Wireless
+                                Essentials or possessing equivalent
+                                knowledge.
+                            </p>
+                            <h3>Requirements</h3>
+                            <p>
+                                The curriculum is appropriate for students
+                                at many education levels and types of
+                                institutions, including high schools,
+                                secondary schools, universities, colleges,
+                                career and technical schools, and
+                                community centers.
+                                <br>
+                                For Students
+                                <br>
+                                • No prerequisites
+                            </p>
+                            <h3>What You'll learn</h3>
+                            <p>
+                            <ul>
+                                <li>Work with routers, switches and
+                                    wireless devices to configure and
+                                    troubleshoot VLANs, Wireless LANs
+                                    and Inter - VLAN routing.</li>
+                                <li>Configure and troubleshoot
+                                    redundancy on a switched network
+                                    using STP and EtherChannel.</li>
+                                <li>Develop critical thinking and
+                                    problem-solving skills using real
+                                    equipment and Cisco Packet Tracer.</li>
+                                <li>Explain how to support available and
+                                    reliable networks using dynamic
+                                    addressing and first-hop redundancy
+                                    protocols.</li>
+                            </ul>
+                            </p>
+                            <p>
+                                A distance learning option is available
+                                for this course. Lab activities can be
+                                completed with Packet Tracer if lab
+                                equipment is not available.
+                            </p>
+                            <p>
+                            <h5><u>Contact Info</u></h5>
                             <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>123 News Street, NY, USA</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <p><i class="fa fa-phone"></i>+123-456-7890</p>
-                                <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                <p><i class="fa fa-map-marker"></i> SCC Building 1st floor</p>
+                                <p><i class="fa fa-envelope"></i> computing@icsit.jkuat.ac.ke</p>
+                                <p><i class="fa fa-phone"></i> 0114557856</p>
+                            </div>
+
+                            <h5><u>Payment</u></h5>
+                            <div class="contact-info">
+                                <p>10,000/= per module
+                                    Registration fee of Ksh 1,000/=</p>
+                            </div>
+
+                            <h5><u>Bank Details</u></h5>
+                            <div class="contact-info">
+                                <p>JKUAT Enterprise Limited</p>
+                                <p>Bank: Cooperative Bank</p>
+                                <p>Branch:Thika</p>
+                                <p>Ac/no:01148734728100</p>
+                                <br>
+                                <p>Or</p>
+                                <p>Paybill: 400200</p>
+                                <p>Ac/No: 01148734728100</p>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="sidebar-widget">
+                            <h2 class="sw-title">Recently Viewed</h2>
+                            <div class="news-list">
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="img/animal-handling.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Research animal handling training and Microbiology Techniques
+                                            Training</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="img/summer-school.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Summer School Visualization - Free registration</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="img/conference.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Call for Papers - 2022 SRI Conference</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="img/software-testing.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Fundamentals of Software Testing, Third Cohort</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="img/firbr-optics.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Fiber Optic Training</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Useful Links</h3>
-                            <ul>
-                                <li><a href="#">Lorem ipsum</a></li>
-                                <li><a href="#">Pellentesque</a></li>
-                                <li><a href="#">Aenean vulputate</a></li>
-                                <li><a href="#">Vestibulum sit amet</a></li>
-                                <li><a href="#">Nam dignissim</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Single News End-->
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Quick Links</h3>
-                            <ul>
-                                <li><a href="#">Lorem ipsum</a></li>
-                                <li><a href="#">Pellentesque</a></li>
-                                <li><a href="#">Aenean vulputate</a></li>
-                                <li><a href="#">Vestibulum sit amet</a></li>
-                                <li><a href="#">Nam dignissim</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="title">Newsletter</h3>
-                            <div class="newsletter">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed porta dui. Class aptent taciti sociosqu
-                                </p>
-                                <form>
-                                    <input class="form-control" type="email" placeholder="Your email here">
-                                    <button class="btn">Submit</button>
-                                </form>
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Contacts</h3>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>Main Campus, Juja, Kenya</p>
+                            <p><i class="fa fa-envelope"></i>thereporter@jkuat.ac.ke</p>
+                            <p><i class="fa fa-phone"></i>+254 700 000 000</p>
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        <!-- Footer Menu Start -->
-        <div class="footer-menu">
-            <div class="container">
-                <div class="f-menu">
-                    <a href="">Terms of use</a>
-                    <a href="">Privacy policy</a>
-                    <a href="">Cookies</a>
-                    <a href="">Accessibility help</a>
-                    <a href="">Advertise with us</a>
-                    <a href="">Contact us</a>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Useful Links</h3>
+                        <ul>
+                            <li><a href="#">Be a Reporter</a></li>
+                            <li><a href="#">Enroll</a></li>
+                            <li><a href="#">Apply Course</a></li>
+                            <li><a href="#">Undergraduate Courses</a></li>
+                            <li><a href="#">Postgraduate Courses</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Links To</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Regional CISCO Academy</a></li>
+                            <li><a href="#">JKUAT Enterprises</a></li>
+                            <li><a href="#">JKUAT Tech Expo</a></li>
+                            <li><a href="#">Online Systems & Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Newsletter</h3>
+                        <div class="newsletter">
+                            <p>
+                                You can get our weekly newsletter by subcribing to us. You will always stay connected
+                                and up to date on the latest news.
+                            </p>
+                            <form>
+                                <input class="form-control" type="email" placeholder="Your email here">
+                                <button class="btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Footer Menu End -->
+    </div>
+    <!-- Footer End -->
 
-        <!-- Footer Bottom Start -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 copyright">
-                        <p>Copyright &copy; <a href="">Your Site Name</a>. All Rights Reserved</p>
-                    </div>
+    <!-- Footer Menu Start -->
+    <div class="footer-menu">
+        <div class="container">
+            <div class="f-menu">
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Accessibility help</a>
+                <a href="">Advertise with us</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Menu End -->
 
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <div class="col-md-6 template-by">
-                        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                    </div>
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="">The JKUAT Reporter</a>. All Rights Reserved</p>
+                </div>
+
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <div class="col-md-6 template-by">
+                    <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom End -->
+    </div>
+    <!-- Footer Bottom End -->
 
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
