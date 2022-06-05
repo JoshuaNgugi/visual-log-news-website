@@ -26,6 +26,30 @@
 
 <body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <!-- Nav Bar Start -->
     <div class="nav-bar">
         <div class="container">
@@ -37,41 +61,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto">
-                        <a href="#" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Sub Item 1</a>
-                                <a href="#" class="dropdown-item">Sub Item 2</a>
-                            </div>
-                        </div>
-                        <a href="#" class="nav-item nav-link active">Single Page</a>
-                        <a href="#" class="nav-item nav-link">Contact Us</a>
+                        <a href="#" class="nav-item nav-link" title="Go to home page">Home</a>
+                        <a href="#" class="nav-item nav-link active" title="This page shows a single news article">Single Page</a>
+                        <a href="#" class="nav-item nav-link" title="Visit contact us page">Contact Us</a>
                     </div>
                     <div class="social ml-auto">
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-twitter" title="Visit our Twitter handle"></i></a>
+                        <a href=""><i class="fab fa-facebook-f" title="Visit our Facebook page"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in" title="Visit our LinkedIn page"></i></a>
+                        <a href=""><i class="fab fa-instagram" title="Visit our Instagram page"></i></a>
+                        <a href=""><i class="fab fa-youtube" title="Visit our Youtube channel"></i></a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
     <!-- Nav Bar End -->
-
-    <!-- Breadcrumb Start -->
-    <div class="breadcrumb-wrap">
-        <div class="container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">News</a></li>
-                <li class="breadcrumb-item active">News details</li>
-            </ul>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
 
     <!-- Brand Start -->
     <div class="brand">
@@ -80,20 +85,20 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="b-logo">
                         <a href="home.html">
-                            <img src="img/cisco.png" alt="Logo">
+                            <img src="img/cisco.png" alt="Logo" title="Cisco Logo">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5">
                     <div class="b-logo">
                         <a href="#">
-                            <img src="img/reporter-logo-1.PNG" alt="The Jkuat Reporter">
+                            <img src="img/reporter-logo-1.PNG" alt="The Jkuat Reporter" title="The JKUAT reporter">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4">
                     <div class="b-search">
-                        <input type="text" placeholder="Search">
+                        <input type="text" placeholder="Search for course or activity">
                         <button><i class="fa fa-search"></i></button>
                     </div>
                 </div>
